@@ -1,0 +1,12 @@
+//Init Datepicker for scheduled date in table
+            $("tr.main-row .input-group.date").datetimepicker({
+                widgetPositioning: {
+                    horizontal: 'left'
+                },
+                allowInputToggle: true,
+                useCurrent: false,
+                ignoreReadonly: true,
+                minDate: moment(),
+                toolbarPlacement: 'bottom',
+                format: dateFormat /*moment.js format*/
+            });
